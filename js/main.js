@@ -7,3 +7,10 @@ document.body.onload = function () {
         }
     }, 1000);
 }
+
+let bookmark = document.querySelector('.bookmark');
+
+
+if(pageYOffset == 0){
+    bookmark.style = 'transform: translateX(0)';
+}

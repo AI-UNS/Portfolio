@@ -1,9 +1,48 @@
-.header{
-    background: $black;
+.header {
+    background: $blue;
     height: 100vh;
- 
-    &__content{
-        font-family: 'BlackShake', sans-serif;
-        color: $white;
+    overflow: hidden;
+    position: relative;
+    color: $white;
+
+    &__content {
+        font-size: 40px;
+        margin: 20px;
     }
+}
+
+.bookmark {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    background: $red;
+    width: 700px;
+    transform: translateX(-700px);
+    transition: 2s;
+    height: 250px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    h2{
+        font-size: 30px;
+        margin-left: 20px;
+        // padding: 10px 20px;
+        // border: 2px solid $white;
+        // border-radius: 20px;
+    }
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $white;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    width: 800px;
+    height: 300px;
+    margin-left: auto;
+
+
 }

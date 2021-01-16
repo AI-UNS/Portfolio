@@ -3,32 +3,76 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
+    z-index: -10;
     color: $white;
 
     &__content {
         font-size: 40px;
         margin: 20px;
     }
-}
 
-.bookmark {
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-    background: $red;
-    width: 700px;
-    transform: translateX(-700px);
-    transition: 2s;
-    height: 250px;
-    margin-top: 40px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-    h2{
-        font-size: 30px;
-        margin-left: 20px;
-        // padding: 10px 20px;
-        // border: 2px solid $white;
-        // border-radius: 20px;
+
+    .circleMenu {
+        width: 300px;
+        height: 300px;
+        clip-path: circle(47.5% at 50% 50%);
+        background: $yellow;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%, -50%);
+        right: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+
+        .contacts {
+            width: 100px;
+            height: 100px;
+            background: black;
+            clip-path: circle(47.5% at 50% 50%);
+            margin: auto 10px 10px auto;
+        }
+        .about {
+            width: 100px;
+            height: 100px;
+            background: black;
+            clip-path: circle(47.5% at 50% 50%);
+            margin: auto auto 10px 10px;
+        }
+        .works {
+            width: 100px;
+            height: 100px;
+            background: black;
+            clip-path: circle(47.5% at 50% 50%);
+            margin:  10px 10px auto auto;
+        }
+        .info {
+            width: 100px;
+            height: 100px;
+            background: black;
+            clip-path: circle(47.5% at 50% 50%);
+            margin: 10px auto auto 10px;
+        }
+    }
+
+    .bookmark {
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+        background: $red;
+        width: 700px;
+        transform: translateX(-700px);
+        transition: 2s;
+        height: 250px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
     }
 }
 
@@ -38,6 +82,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: -2;
     background: $white;
     clip-path: polygon(100% 0, 0 100%, 100% 100%);
     width: 800px;

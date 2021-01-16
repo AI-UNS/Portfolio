@@ -1,0 +1,9 @@
+.header{
+    background: $black;
+    height: 100vh;
+ 
+    &__content{
+        font-family: 'BlackShake', sans-serif;
+        color: $white;
+    }
+}

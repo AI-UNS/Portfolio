@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'BlackShake';
-    src: url('../fonts/BlackShake.eot');
-    src: url('../fonts/BlackShake.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/BlackShake.woff2') format('woff2'),
-        url('../fonts/BlackShake.woff') format('woff'),
-        url('../fonts/BlackShake.ttf') format('truetype');
+    src: url('../../fonts/BlackShake.eot');
+    src: url('../../fonts/BlackShake.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/BlackShake.woff2') format('woff2'),
+        url('../../fonts/BlackShake.woff') format('woff'),
+        url('../../fonts/BlackShake.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,11 +12,11 @@
 
 @font-face {
     font-family: 'Ripple';
-    src: url('../fonts/Ripple-Regular.eot');
-    src: url('../fonts/Ripple-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Ripple-Regular.woff2') format('woff2'),
-        url('../fonts/Ripple-Regular.woff') format('woff'),
-        url('../fonts/Ripple-Regular.ttf') format('truetype');
+    src: url('../../fonts/Ripple-Regular.eot');
+    src: url('../../fonts/Ripple-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Ripple-Regular.woff2') format('woff2'),
+        url('../../fonts/Ripple-Regular.woff') format('woff'),
+        url('../../fonts/Ripple-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -24,11 +24,11 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.eot');
-    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../fonts/Montserrat-Regular.woff') format('woff'),
-        url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('../../fonts/Montserrat-Regular.eot');
+    src: url('../../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../../fonts/Montserrat-Regular.woff') format('woff'),
+        url('../../fonts/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

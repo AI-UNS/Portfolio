@@ -25,7 +25,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        // transform: rotate(45deg);
 
 
         .contacts {
@@ -38,7 +37,6 @@
 
 
             a {
-                display: block;
                 width: inherit;
                 height: inherit;
                 display: flex;
@@ -60,7 +58,6 @@
             margin: auto auto 10px 10px;
 
             a {
-                display: block;
                 width: inherit;
                 height: inherit;
                 display: flex;
@@ -81,7 +78,6 @@
             margin: 10px 10px auto auto;
 
             a {
-                display: block;
                 width: inherit;
                 height: inherit;
                 display: flex;
@@ -102,7 +98,6 @@
             margin: 10px auto auto 10px;
 
             a {
-                display: block;
                 width: inherit;
                 height: inherit;
                 display: flex;
@@ -152,3 +147,7 @@
 }
 
 
+.stopper{
+    transform: rotate(0deg) !important;
+    // background: blue;
+}

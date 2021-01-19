@@ -22,16 +22,37 @@ preheader.addEventListener('mouseout', function () {
 })
 
 
-let r = 0
-setInterval(() => {
+let r = 0,
+    z = 0;
+let circle = setInterval(menuRotation, 50),
+    link = setInterval(linkRotation, 50);
+
+
+function menuRotation() {
     circleMenu.style = `transform: rotate(${r}deg);
                         transition: 0.5s;`
     r += 2
+};
 
-    
+function linkRotation() {
+    menuLink[0].style = `transform: rotate(${z}deg); transition: 0.5s;`
+    menuLink[1].style = `transform: rotate(${z}deg); transition: 0.5s;`
+    menuLink[2].style = `transform: rotate(${z}deg); transition: 0.5s;`
+    menuLink[3].style = `transform: rotate(${z}deg); transition: 0.5s;`
 
-}, 50);
+    z -= 2;
+}
 
-// for (let i = 0; i < menuLink.length; i++) {
-//     menuLink[i].style = `transform: rotate(${r})`
-// }
+circleMenu.addEventListener('mouseover', stop)
+circleMenu.addEventListener('mouseout', start)
+
+
+function start() {
+    circle = setInterval(menuRotation, 50);
+    link = setInterval(linkRotation, 50);
+}
+
+function stop() {
+    clearInterval(circle)
+    clearInterval(link)
+}
